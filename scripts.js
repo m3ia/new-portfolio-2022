@@ -1,13 +1,33 @@
+// ------------------------------------------------------------------------------------
+// PAGE ELEMENTS
+// ------------------------------------------------------------------------------------
 let doc = document;
 
-// Start display with mock up
+// ------------------------------------------------------------------------------------
+// CONTENT SECTIONS:
+// ------------------------------------------------------------------------------------
+// About Me Section (default)
+const aboutDiv = doc.getElementsByClassName('aboutMe')[0];
+// About Me link:
+const aboutMeLink = doc.getElementById('aboutMeLink');
+// Contact Form section:
+const contactForm = doc.getElementsByClassName('contactFormDiv')[0];
+// Contact Form link
 const contactLink = doc.getElementById('contactLink');
 
-const contactForm = doc.getElementsByClassName('contactFormDiv')[0];
+// ------------------------------------------------------------------------------------
+// SIDEBAR NAV LINKS FUNCTIONALITY
+// ------------------------------------------------------------------------------------
 
-const mockDiv = doc.getElementsByClassName('mockData')[0];
+// About Me link:
+aboutMeLink.addEventListener("click", function() {
+    contactForm.style.display = 'none';
+    aboutDiv.style.display = 'block';
+})
+
+
+// Contact Form link:
 contactLink.addEventListener("click", function() {
+    aboutDiv.style.display = 'none';
     contactForm.style.display = 'block';
-
-    mockDiv.style.display = 'none';
 })
