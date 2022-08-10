@@ -66,12 +66,12 @@ p, li {
 }
 
 .mockData {
-    display:none;
+    display:block;
 }
 
 /* Contact Form */
 .contactFormDiv {
-    display:block;
+    display:none;
 }
 
 .contactForm ul li {
