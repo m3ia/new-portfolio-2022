@@ -1,0 +1,65 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    color: white;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p, li {
+    font-size: 25px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+    width: 600px;
+    min-width: 300px;
+    height: 100%;
+    position: relative;
+}
+
+.sidebarWrapper {
+    position: absolute;
+    bottom: 1rem;
+    text-align: left;
+    padding: 45px;
+    margin: 12px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+/* Content Div */
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    width: 100%;
+    padding: 50px;
+}
