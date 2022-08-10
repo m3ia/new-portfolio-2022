@@ -6,10 +6,11 @@
 
 html, body {
     height: 100%;
+    /* background-color: blue; */
 }
 
 body {
-    height: 100%;
+    margin: 0%;
     color: white;
 }
 
@@ -36,7 +37,7 @@ p, li {
     flex-direction: column;
     align-items: center;
     background-color: orange;
-    width: 600px;
+    max-width: 600px;
     min-width: 300px;
     height: 100%;
     position: relative;
@@ -62,4 +63,28 @@ p, li {
     background-color: blue;
     width: 100%;
     padding: 50px;
+}
+
+.mockData {
+    display:none;
+}
+
+/* Contact Form */
+.contactFormDiv {
+    display:block;
+}
+
+.contactForm ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+input {
+    width: 200px;
+}
+textarea {
+    vertical-align: top;
+    height: 150px;
+    width: 350px;
+    margin: 10px;
 }
