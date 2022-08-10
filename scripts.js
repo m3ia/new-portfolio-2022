@@ -21,6 +21,8 @@ const contactLink = doc.getElementById('contactLink');
 
 // About Me link:
 aboutMeLink.addEventListener("click", function() {
+    contactForm.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    aboutDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
     contactForm.style.display = 'none';
     aboutDiv.style.display = 'block';
 })
@@ -28,6 +30,8 @@ aboutMeLink.addEventListener("click", function() {
 
 // Contact Form link:
 contactLink.addEventListener("click", function() {
+    aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    contactForm.classList.add("w3-animate-opacity", "w3-animate-bottom");
     aboutDiv.style.display = 'none';
     contactForm.style.display = 'block';
 })
