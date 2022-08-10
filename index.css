@@ -1,12 +1,17 @@
 .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;    
+    justify-content: left;    
 }
 
 html, body {
     height: 100%;
     /* background-color: blue; */
+}
+
+html {
+    margin: 0%;
+    /* width: 0% */
 }
 
 body {
@@ -27,6 +32,9 @@ p, li {
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -37,7 +45,7 @@ p, li {
     flex-direction: column;
     align-items: center;
     background-color: orange;
-    max-width: 600px;
+    max-width: 100%;
     min-width: 300px;
     height: 100%;
     position: relative;
@@ -61,17 +69,22 @@ p, li {
     flex-direction: column;
     justify-content: center;
     background-color: blue;
+    min-width: 50%;
     width: 100%;
-    padding: 50px;
+    height: 100%;
 }
 
+.content {
+    padding: 50px;
+    /* margin: 50px; */
+}
 .mockData {
     display:block;
 }
 
 /* Contact Form */
 .contactFormDiv {
-    display:none;
+    display: none;
 }
 
 .contactForm ul li {
@@ -88,3 +101,44 @@ textarea {
     width: 350px;
     margin: 10px;
 }
+
+/* Media Queries */
+/* @media (max-width: 960px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        margin: 0%;  
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+    .sidebar {
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        background-color: orange;
+        width: 100%;
+        position: relative;
+    }
+
+    .sidebarWrapper {
+        position: absolute;
+        bottom: 1rem;
+        text-align: left;
+        padding: 45px;
+        margin: 12px;
+        border: 1px solid black;
+    }
+    
+    .contentDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: blue;
+        max-width: 80%;
+        padding: 50px;
+    } 
+    
+ } */
