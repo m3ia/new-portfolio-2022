@@ -1,11 +1,11 @@
-// ------------------------------------------------------------------------------------
+// ---------------------------------
 // PAGE ELEMENTS
-// ------------------------------------------------------------------------------------
+// ---------------------------------
 let doc = document;
 
-// ------------------------------------------------------------------------------------
+// ---------------------------------
 // CONTENT SECTIONS:
-// ------------------------------------------------------------------------------------
+// ---------------------------------
 // About Me Section (default)
 const aboutDiv = doc.getElementsByClassName('aboutMe')[0];
 // About Me link:
@@ -15,9 +15,9 @@ const contactFormDiv = doc.getElementsByClassName('contactFormDiv')[0];
 // Contact Form link
 const contactLink = doc.getElementById('contactLink');
 
-// ------------------------------------------------------------------------------------
+// ---------------------------------
 // SIDEBAR NAV LINKS FUNCTIONALITY
-// ------------------------------------------------------------------------------------
+// ---------------------------------
 
 // About Me link:
 aboutMeLink.addEventListener("click", function() {
@@ -36,40 +36,23 @@ contactLink.addEventListener("click", function() {
     contactFormDiv.style.display = 'block';
 })
 
-// ------------------------------------------------------------------------------------
+// ---------------------------------
 // CONTACT FORM SUBMISSION
-// ------------------------------------------------------------------------------------
-const submissionName = doc.getElementById('inputName');
-const submissionEmail = doc.getElementById('inputEmail');
-const submissionMsg = doc.getElementById('inputMessage');
+// ---------------------------------
 
-submissionName.addEventListener("input", e => {
-    const name = e.target.value;
-    return name;
-})
+const submitBtn = doc.getElementById('submitBtn');
 
-submissionEmail.addEventListener("input", e => {
-    const email = e.target.value;
-    return email;
-})
+submitBtn.addEventListener("click", () => {
+    const submissionName = document.querySelector('input[name="name"]').value;
 
-submissionMsg.addEventListener("input", e => {
-    const msg = e.target.value;
-    return msg;
-})
+    const submissionEmail = document.querySelector('input[name="email"]').value;
 
-const contactForm = doc.querySelector('form.contactForm');
+    const submissionMsg = document.querySelector('textarea[name="message"]').value;
+    console.log('name: ', submissionName);
+    console.log('email: ', submissionEmail);
+    console.log('message: ', submissionMsg);
 
-contactForm.addEventListener("submit", e => {
-    e.preventDefault();
-    console.log('name: ', submissionName.value);
-    console.log('email: ', submissionEmail.value);
-    console.log('message: ', submissionMsg.value);
+    document.getElementsByClassName("contactForm")[0].reset();
 
-    const subName = doc.getElementById('inputName');
-    const subEmail = doc.getElementById('inputEmail');
-    const subMsg = doc.getElementById('inputMessage');
-    subName.value = "";
-    subEmail.value = "";
-    subMsg.value = "";
-})
+});
+    
