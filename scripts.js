@@ -25,6 +25,25 @@ aboutMeLink.addEventListener("click", function() {
     aboutDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
     contactFormDiv.style.display = 'none';
     aboutDiv.style.display = 'block';
+    // Greeting Typewriter Effect
+    let i=0;
+    let greeting = `Hello, World!`;
+    let greetingSection = doc.getElementById('greeting');
+
+    greetingSection.innerHTML = "";
+
+    function typeWriter() {
+        if (i < greeting.length) {
+        greetingSection = doc.getElementById('greeting');
+        greetingSection.innerHTML += greeting[i];
+        i++;
+        setTimeout(typeWriter, 150);
+        }
+    }
+
+    typeWriter();
+
+
 })
 
 
@@ -55,4 +74,9 @@ submitBtn.addEventListener("click", () => {
     document.getElementsByClassName("contactForm")[0].reset();
 
 });
-    
+
+
+
+window.onload=function() {
+    document.querySelector("#aboutMeLink").click();
+}
