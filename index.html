@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melissa N</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Ibarra+Real+Nova:ital,wght@0,500;0,700;1,400&family=Nixie+One&family=Quicksand:wght@300;400;500;600;700&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
@@ -16,7 +19,8 @@
                     <img src="/new-portfolio-2022/profile-2022.jpeg" alt="profile image" id="profileImg">
                 </div>
                 <div class="sidebarHeading">
-                    <h1>Hi, there!</h1>
+                    <h1 id="firstLine">Melissa</h1>
+                    <br><h1 id="secondLine">Natividad</h1>
                 </div>
                 <div class="nav">
                     <ul>
@@ -29,41 +33,39 @@
             </div>
         </div>
         <div class="contentDiv">
-            <div class="content">
-                <div class="aboutMe">
-                    <h2><b>Hello, world!</b></h2>
-                    <p>
-                        I'm Melissa Natividad from Oakland, California. Currently, I'm studying as a software engineer apprentice at <a href="https://techtonica.org" target=”_blank”>Techtonica</a>.
-                    </p>
+            <div class="aboutMe">
+                <h2><b>Hello, World!</b></h2>
+                <p>
+                    I'm Melissa Natividad from Oakland, California. Currently, I'm studying as a software engineer apprentice at <a href="https://techtonica.org" target=”_blank”>Techtonica</a>.
+                </p>
 
-                    <p>
-                        My passion for engineering stems from my love for applying my creative and curious sides to solve user-centered problems. If I'm not building full-stack web applications, I'm likely creating music, teaching my cat a new trick, or working on my third dramedy pilot.
-                    </p>
-                </div>
-                <div class="contactFormDiv">
-                    <h2>Contact Me:</h2>
-                    
-                    <form class="contactForm">
-                        <ul>
-                            <li>
-                                <label for="inputName">Name: </label>
-                                <input type="text" name="name" id="inputName" required>
-                            </li>
-                            <li>
-                                <label for="inputEmail">Email: </label>
-                                <input type="text" name="email" id="inputEmail" required>
-                            </li>
-                            <li>
-                                <label for="message">Message:</label>
-                                <br>
-                                <textarea id="inputMessage" name="message" required></textarea>
-                            </li>
-                            <li>
-                                <button id="submitBtn" type="submit">Send Me</button>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
+                <p>
+                    My passion for engineering stems from my love for applying my creative and curious sides to solve user-centered problems. If I'm not building full-stack web applications, I'm likely creating music, teaching my cat a new trick, or working on my third dramedy pilot.
+                </p>
+            </div>
+            <div class="contactFormDiv">
+                <h2>Contact Me:</h2>
+                
+                <form class="contactForm">
+                    <ul>
+                        <li>
+                            <label for="inputName">Name: </label>
+                            <input type="text" name="name" id="inputName" required>
+                        </li>
+                        <li>
+                            <label for="inputEmail">Email: </label>
+                            <input type="text" name="email" id="inputEmail" required>
+                        </li>
+                        <li>
+                            <label for="message">Message:</label>
+                            <br>
+                            <textarea id="inputMessage" name="message" required></textarea>
+                        </li>
+                        <li>
+                            <button id="submitBtn" type="submit">Send Me</button>
+                        </li>
+                    </ul>
+                </form>
             </div>
         </div>
     </div>
