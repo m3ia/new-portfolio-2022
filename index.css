@@ -6,12 +6,10 @@
 
 html, body {
     height: 100%;
-    /* background-color: blue; */
 }
 
 html {
     margin: 0%;
-    /* width: 0% */
 }
 
 body {
@@ -43,6 +41,15 @@ h2 {
     color: white;
     font-weight: 700;
     text-shadow: 1px 1px 2px #000000;
+}
+
+h3{
+    font-size: 37px;
+    font-family: 'Nixie One', 'Staatliches', 'Bebas Neue', serif;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #D35786;
+    /* font-weight: 700; */
 }
 
 p, li {
@@ -112,7 +119,7 @@ p, li {
     color: #D35786;
 }
 
-/* Content Div */
+/* Content Div --------------------------- */
 .contentDiv {
     display: flex;
     flex-direction: column;
@@ -141,7 +148,6 @@ p, li {
     max-height: 85%;
     overflow: auto;
     scroll-behavior: smooth;
-    scrollbar-darkshadow-color: #D35786;
     border-radius: 25px;
 }
 
@@ -152,7 +158,8 @@ p, li {
 .contactForm {
     margin-top: 50px;
 }
-/* Contact Form */
+
+/* Contact Form --------------------------- */
 .contactFormDiv {
     display: none;
 }
@@ -165,6 +172,7 @@ p, li {
 input {
     width: 200px;
 }
+
 textarea {
     vertical-align: top;
     height: 150px;
@@ -172,7 +180,78 @@ textarea {
     margin: 10px;
 }
 
-/* Media Queries */
+/* Projects --------------------------- */
+.projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.projectsTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.projectsCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    padding: 3rem;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.card {
+    width: 75%;
+    height: auto;
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    background-color: rgba(253, 253, 253, 0.65);
+    border-radius: 25px;
+    padding: 3%;
+    margin-bottom: 2%;
+}
+
+.card header {
+    text-align: left;
+}
+
+.card h2 {
+    font-size: 12px;
+}
+
+.innerCardDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projDesc p {
+    max-width: 95%;
+    max-height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.cardFooter img {
+    border: 1px solid #D35786;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+/* Media Queries --------------------------- */
  @media (max-width: 900px) {
     .sidebar {
         border: 2px solid black;

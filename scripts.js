@@ -1,3 +1,5 @@
+import { projects } from '/module.js';
+
 // ---------------------------------
 // PAGE ELEMENTS
 // ---------------------------------
@@ -69,8 +71,8 @@ contactLink.addEventListener("click", function() {
 projectsLink.addEventListener("click", function() {
     // Updates animation classes
     aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
-    projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
-    contactFormDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
+    contactFormDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    projectsDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
 
     // Updates Display
     contactFormDiv.style.display = 'none';
@@ -98,8 +100,51 @@ submitBtn.addEventListener("click", () => {
 
 });
 
+// ---------------------------------
+// PROJECTS SECTION:
+// ---------------------------------
+// Get Cards Section
+let cards = doc.getElementsByClassName('projectsCards')[0];
+
+projects.forEach( (elem, index) => {
+    let card = doc.createElement('article');
+    cards.appendChild(card);
+    card.classList.add('card', `project-${index}`);
+    let header = doc.createElement('header');
+    let h3 = doc.createElement('h3');
+    h3.innerHTML = elem.Name;
+    header.appendChild(h3);
+    card.appendChild(header);
+    let innerCardDiv = doc.createElement('div');
+    card.appendChild(innerCardDiv);
+    let desc = doc.createElement('div');
+    innerCardDiv.appendChild(desc);
+    innerCardDiv.classList.add('innerCardDiv');
+    desc.classList.add('projDesc');
+    let p = doc.createElement('p');
+    desc.appendChild(p);
+    p.innerHTML = `<strong>Description:</strong> ${elem.Description}`;
+    p.innerHTML += `<span><strong> <a href="${elem['Link']}">Link</a></strong></span>`;
+    p.innerHTML += `<p><strong>Built With</strong>: ${elem['Build']}</p>`;
+    p.innerHTML += `<p><strong>Category</strong>: ${elem['Project Type']}</p>`;
+    let cardFooter = doc.createElement('div');
+    cardFooter.setAttribute('class', 'cardFooter');
+    innerCardDiv.appendChild(cardFooter);
+    let anchor = doc.createElement('a');
+    cardFooter.appendChild(anchor);
+    anchor.href = elem.Link;
+    anchor.target = '_blank';
+    let img = doc.createElement('img');
+    anchor.appendChild(img);
+    img.src = elem.Image;
+    img.alt = elem.Name;
+});
 
 
+// ---------------------------------
+// ONLOAD SECTION:
+// ---------------------------------
+// Default to About Me Section
 window.onload=function() {
     document.querySelector("#aboutMeLink").click();
 }
