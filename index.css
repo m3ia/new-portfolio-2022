@@ -105,10 +105,11 @@ p, li {
 
 .nav a {
     text-decoration: none;
+    color: black;
 }
 
 .nav a:hover {
-    color: #B6C250;
+    color: #D35786;
 }
 
 /* Content Div */
@@ -122,6 +123,14 @@ p, li {
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.contentDiv a {
+    color: #D35786;
+}
+
+.contentDiv a:hover {
+    color: #443B2E;
 }
 
 .aboutMe, .contactFormDiv {

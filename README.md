@@ -4,6 +4,10 @@
 - intro
 - projects
 - contact form
+- [ ] add experience
+- [ ] Add a sticky nav bar with a smaller screen
+- [ ] create cards for projects
+- [ ] add links about me: reinventions series, techtonica article, yelp articles about my projects?
 ## Links: 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations

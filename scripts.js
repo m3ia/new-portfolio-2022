@@ -6,14 +6,18 @@ let doc = document;
 // ---------------------------------
 // CONTENT SECTIONS:
 // ---------------------------------
-// About Me Section (default)
+// About Me Section (default):
 const aboutDiv = doc.getElementsByClassName('aboutMe')[0];
 // About Me link:
 const aboutMeLink = doc.getElementById('aboutMeLink');
 // Contact Form section:
 const contactFormDiv = doc.getElementsByClassName('contactFormDiv')[0];
-// Contact Form link
+// Contact Form link:
 const contactLink = doc.getElementById('contactLink');
+// Projects Section:
+const projectsDiv = doc.getElementsByClassName('projects')[0];
+// Projects Link:
+const projectsLink = doc.getElementById('projectsLink');
 
 // ---------------------------------
 // SIDEBAR NAV LINKS FUNCTIONALITY
@@ -21,9 +25,14 @@ const contactLink = doc.getElementById('contactLink');
 
 // About Me link:
 aboutMeLink.addEventListener("click", function() {
+    // Updates animation classes
     contactFormDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     aboutDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
+
+    // Updates Display
     contactFormDiv.style.display = 'none';
+    projectsDiv.style.display = 'none';
     aboutDiv.style.display = 'block';
     // Greeting Typewriter Effect
     let i=0;
@@ -40,19 +49,33 @@ aboutMeLink.addEventListener("click", function() {
         setTimeout(typeWriter, 150);
         }
     }
-
     typeWriter();
-
-
 })
-
 
 // Contact Form link:
 contactLink.addEventListener("click", function() {
+    // Updates animation classes    
     aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     contactFormDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
+
+    // Updates Display
     aboutDiv.style.display = 'none';
+    projectsDiv.style.display = 'none';
     contactFormDiv.style.display = 'block';
+})
+
+// Projects link:
+projectsLink.addEventListener("click", function() {
+    // Updates animation classes
+    aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    contactFormDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
+
+    // Updates Display
+    contactFormDiv.style.display = 'none';
+    aboutDiv.style.display = 'none';
+    projectsDiv.style.display = 'block';
 })
 
 // ---------------------------------
