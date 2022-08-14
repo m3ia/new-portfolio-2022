@@ -1,6 +1,14 @@
 import { projects } from '/module.js';
 
 // ---------------------------------
+// ONLOAD SECTION:
+// ---------------------------------
+// Default to About Me Section
+window.onload=function() {
+    document.querySelector(".aboutMeLink").click();
+}
+
+// ---------------------------------
 // PAGE ELEMENTS
 // ---------------------------------
 let doc = document;
@@ -30,14 +38,14 @@ const projectsLinks = doc.querySelectorAll('.projectsLink');
 aboutMeLinks.forEach(el => {
     el.addEventListener("click", function() {
     // Updates animation classes
+    aboutDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
     contactFormDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
-    aboutDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
 
     // Updates Display
+    aboutDiv.style.display = 'block';
     contactFormDiv.style.display = 'none';
     projectsDiv.style.display = 'none';
-    aboutDiv.style.display = 'block';
     // Greeting Typewriter Effect
     let i=0;
     let greeting = `Hello, World!`;
@@ -144,11 +152,3 @@ projects.forEach( (elem, index) => {
     img.alt = elem.Name;
 });
 
-
-// ---------------------------------
-// ONLOAD SECTION:
-// ---------------------------------
-// Default to About Me Section
-window.onload=function() {
-    document.querySelector(".aboutMeLink").click();
-}
