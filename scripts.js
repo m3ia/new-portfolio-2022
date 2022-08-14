@@ -16,11 +16,11 @@ const aboutMeLinks = doc.querySelectorAll('.aboutMeLink')
 // Contact Form section:
 const contactFormDiv = doc.getElementsByClassName('contactFormDiv')[0];
 // Contact Form link:
-const contactLink = doc.getElementById('contactLink');
+const contactLinks = doc.querySelectorAll('.contactLink');
 // Projects Section:
 const projectsDiv = doc.getElementsByClassName('projects')[0];
 // Projects Link:
-const projectsLink = doc.querySelectorAll('.projectsLink');
+const projectsLinks = doc.querySelectorAll('.projectsLink');
 
 // ---------------------------------
 // SIDEBAR NAV LINKS FUNCTIONALITY
@@ -58,7 +58,7 @@ aboutMeLinks.forEach(el => {
 })
 
 // Contact Form link:
-contactLink.addEventListener("click", function() {
+contactLinks.forEach(el => el.addEventListener("click", function () {
     // Updates animation classes    
     aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
@@ -68,10 +68,10 @@ contactLink.addEventListener("click", function() {
     aboutDiv.style.display = 'none';
     projectsDiv.style.display = 'none';
     contactFormDiv.style.display = 'block';
-})
+}));
 
 // Projects link:
-projectsLink.forEach(el => el.addEventListener("click", function () {
+projectsLinks.forEach(el => el.addEventListener("click", function () {
     // Updates animation classes
     aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     contactFormDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
