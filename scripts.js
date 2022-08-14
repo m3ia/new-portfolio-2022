@@ -20,7 +20,7 @@ const contactLink = doc.getElementById('contactLink');
 // Projects Section:
 const projectsDiv = doc.getElementsByClassName('projects')[0];
 // Projects Link:
-const projectsLink = doc.getElementById('projectsLink');
+const projectsLink = doc.querySelectorAll('.projectsLink');
 
 // ---------------------------------
 // SIDEBAR NAV LINKS FUNCTIONALITY
@@ -71,7 +71,7 @@ contactLink.addEventListener("click", function() {
 })
 
 // Projects link:
-projectsLink.addEventListener("click", function() {
+projectsLink.forEach(el => el.addEventListener("click", function () {
     // Updates animation classes
     aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     contactFormDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
@@ -81,7 +81,7 @@ projectsLink.addEventListener("click", function() {
     contactFormDiv.style.display = 'none';
     aboutDiv.style.display = 'none';
     projectsDiv.style.display = 'block';
-})
+}));
 
 
 // ---------------------------------
