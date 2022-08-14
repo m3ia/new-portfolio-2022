@@ -11,7 +11,8 @@ let doc = document;
 // About Me Section (default):
 const aboutDiv = doc.getElementsByClassName('aboutMe')[0];
 // About Me link:
-const aboutMeLink = doc.getElementById('aboutMeLink');
+// const aboutMeLink = doc.getElementsByClassName('aboutMeLink')[0];
+const aboutMeLinks = doc.querySelectorAll('.aboutMeLink')
 // Contact Form section:
 const contactFormDiv = doc.getElementsByClassName('contactFormDiv')[0];
 // Contact Form link:
@@ -26,7 +27,8 @@ const projectsLink = doc.getElementById('projectsLink');
 // ---------------------------------
 
 // About Me link:
-aboutMeLink.addEventListener("click", function() {
+aboutMeLinks.forEach(el => {
+    el.addEventListener("click", function() {
     // Updates animation classes
     contactFormDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
@@ -52,6 +54,7 @@ aboutMeLink.addEventListener("click", function() {
         }
     }
     typeWriter();
+    })
 })
 
 // Contact Form link:
@@ -79,6 +82,7 @@ projectsLink.addEventListener("click", function() {
     aboutDiv.style.display = 'none';
     projectsDiv.style.display = 'block';
 })
+
 
 // ---------------------------------
 // CONTACT FORM SUBMISSION
@@ -146,5 +150,5 @@ projects.forEach( (elem, index) => {
 // ---------------------------------
 // Default to About Me Section
 window.onload=function() {
-    document.querySelector("#aboutMeLink").click();
+    document.querySelector(".aboutMeLink").click();
 }
