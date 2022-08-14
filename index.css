@@ -35,7 +35,7 @@ h1 {
 
 h2 {
     font-size: 50px;
-    font-family: 'Nixie One',    'Staatliches', 'Bebas Neue', serif;
+    font-family: 'Nixie One', 'Staatliches', 'Bebas Neue', serif;
     letter-spacing: 10px;
     line-height: 30px;
     color: white;
@@ -62,6 +62,10 @@ p, li {
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+.miniNav {
+    display: none;
 }
 
 /* Sidebar --------------------------- */
@@ -254,38 +258,48 @@ textarea {
 /* Media Queries --------------------------- */
  @media (max-width: 900px) {
     .sidebar {
-        border: 2px solid black;
-        min-height: 400px;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-content: space-around;
         background-color: white;
-        min-height: 100%;
+        height: 100%;
         position: relative;
     }
-    
+
+    /* SideBar */
     .sidebarWrapper {
-        position: absolute;
-        bottom: 25%;
-        text-align: left;
-        padding: 5rem;
-        margin: 12px;
+        display: none;
+    }
+
+    /* NavBar */
+    .miniNav {
+        display: block;
+    }
+
+    .sidebarHeading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 5%;
     }
     
     #profileImg {
-        background-image: none;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-origin: content-box;
-        border-radius: 20%;
-        margin-bottom: 10px;
-        align-self: center;
-        position:inherit;
+        margin-left: 20%;
+        max-width: 50%;
+        border-radius: 25px;
     }
 
+    .navBar {
+        display: flex;
+        align-content: flex-end;
+        background-color: #D35786;
+        color: white;
+        font-family: 'Arvo', serif;
+        letter-spacing: 3px;
+        align-items: right;
+    }
+    
     h1 {
         font-size: 50px;
         font-family: 'Nixie One', 'Staatliches', 'Bebas Neue', serif;
