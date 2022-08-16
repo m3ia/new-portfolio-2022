@@ -214,7 +214,7 @@ textarea {
     align-content: center;
 }
 
-.projectsTitle {
+.projectsTitle, .experienceTitle {
     display: flex;
     flex-direction: column;
     align-items: center;

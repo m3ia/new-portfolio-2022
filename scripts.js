@@ -21,22 +21,28 @@ const contactLinks = doc.querySelectorAll('.contactLink');
 const projectsDiv = doc.getElementsByClassName('projects')[0];
 // Projects Link:
 const projectsLinks = doc.querySelectorAll('.projectsLink');
+// Experience Link:
+const experienceLinks = doc.querySelectorAll('.experienceLink');
+// Experience Section:
+const experienceDiv = doc.getElementsByClassName('experienceDiv')[0];
 
 // ---------------------------------
 // SIDEBAR NAV LINKS FUNCTIONALITY
 // ---------------------------------
 
-// About Me link:
+// About Me links:
 aboutMeLinks.forEach(el => {
     el.addEventListener("click", function() {
     // Updates animation classes
     aboutDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
     contactFormDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    experienceDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
 
     // Updates Display
     contactFormDiv.style.display = 'none';
     projectsDiv.style.display = 'none';
+    experienceDiv.style.display = 'none';    
     aboutDiv.style.display = 'block';
 
     // Greeting Typewriter Effect
@@ -58,32 +64,52 @@ aboutMeLinks.forEach(el => {
     })
 })
 
-// Contact Form link:
+// Contact Form links:
 contactLinks.forEach(el => el.addEventListener("click", function () {
-    // Updates animation classes    
+    // Updates animation classes  
+    contactFormDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
     aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
-    contactFormDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
+    experienceDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+
 
     // Updates Display
     aboutDiv.style.display = 'none';
     projectsDiv.style.display = 'none';
+    experienceDiv.style.display = 'none';
     contactFormDiv.style.display = 'block';
 }));
 
-// Projects link:
+// Projects links:
 projectsLinks.forEach(el => el.addEventListener("click", function () {
     // Updates animation classes
+    projectsDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
     aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
     contactFormDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
-    projectsDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
+    experienceDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
 
     // Updates Display
     contactFormDiv.style.display = 'none';
     aboutDiv.style.display = 'none';
+    experienceDiv.style.display = 'none';
     projectsDiv.style.display = 'block';
 }));
 
+// Experience links:
+experienceLinks.forEach(el => el.addEventListener("click", function () {
+    // Updates animation classes
+    experienceDiv.classList.add("w3-animate-opacity", "w3-animate-bottom");
+    aboutDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    contactFormDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+    projectsDiv.classList.remove("w3-animate-opacity", "w3-animate-bottom");
+
+
+    // Updates Display
+    contactFormDiv.style.display = 'none';
+    aboutDiv.style.display = 'none';
+    projectsDiv.style.display = 'none';
+    experienceDiv.style.display = 'block';
+}));
 
 // ---------------------------------
 // CONTACT FORM SUBMISSION
