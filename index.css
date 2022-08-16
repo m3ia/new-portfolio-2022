@@ -144,7 +144,7 @@ p, li {
     color: #443B2E;
 }
 
-.aboutMe, .contactFormDiv {
+.aboutMe, .contactFormDiv, .experienceDiv {
     padding: 50px;
     margin: 50px;
     background-color: rgba(253, 253, 253, 0.65);
@@ -155,9 +155,9 @@ p, li {
     border-radius: 25px;
 }
 
-.aboutMe {
+/* .aboutMe {
     display:block;
-}
+} */
 
 .contactForm {
     margin-top: 50px;
@@ -275,6 +275,20 @@ textarea {
     background-size: 100%;
 
 }
+
+/* Experience (Desktop) --------------------------- */
+.experienceDiv {
+    width: 100%;
+}
+
+.experienceDiv h3 {
+    color: black;
+}
+
+.experienceDiv a {
+    text-decoration: none;
+}
+
 
 /* Media Queries (Mobile) --------------------------- */
  @media (max-width: 900px) {

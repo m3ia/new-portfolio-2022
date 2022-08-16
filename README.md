@@ -4,7 +4,7 @@
 - intro
 - projects
 - contact form
-- [ ] add experience
+- [x] add experience
 - [x] Add a sticky nav bar with a smaller screen
 - [x] create cards for projects
 - [ ] add links about me: reinventions series, techtonica article, yelp articles about my projects?

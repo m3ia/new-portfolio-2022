@@ -1,4 +1,5 @@
 import { projects } from '/module.js';
+import { experiences } from '/experience.js'
 
 // ---------------------------------
 // PAGE ELEMENTS
@@ -171,6 +172,23 @@ projects.forEach( (elem, index) => {
     img.alt = elem.Name;
 });
 
+// ---------------------------------
+// EXPERIENCE SECTION:
+// ---------------------------------
+// Get Exp Section:
+let experienceSection = doc.getElementsByClassName('experienceSection')[0]
+
+experiences.forEach((e, i) => {
+    let div = doc.createElement('div');
+    
+    // Give each exp div a title
+    let h3 = doc.createElement('h3');
+    h3.innerHTML = `${e["Role"]} @ <strong><a href="${e["Company Link"]}">${e["Company"]}</a></strong>`;
+    div.appendChild(h3);
+
+    experienceSection.appendChild(div);
+    
+})
 // ---------------------------------
 // ONLOAD SECTION:
 // ---------------------------------
