@@ -97,7 +97,7 @@ p, li {
 }
 
 #profileImg {
-    background-image: url('./profile-2022.jpeg');
+    background-image: url('/profile-2022.jpeg');
     width: 100%;
     height: 100%;
     background-position: center;
