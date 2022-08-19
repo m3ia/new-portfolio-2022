@@ -1,5 +1,5 @@
-import { projects } from '/module.js';
-import { experiences } from '/experience.js'
+import { projects } from './module.js';
+import { experiences } from './experience.js'
 
 // ---------------------------------
 // PAGE ELEMENTS
