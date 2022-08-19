@@ -155,8 +155,7 @@ projects.forEach( (elem, index) => {
     desc.classList.add('projDesc');
     let p = doc.createElement('p');
     desc.appendChild(p);
-    p.innerHTML = `<strong>Description:</strong> ${elem.Description}`;
-    p.innerHTML += `<span><strong> <a href="${elem['Link']}">Link</a></strong></span>`;
+    p.innerHTML = `<p><strong>Description:</strong> ${elem.Description} <span><strong> <a href="${elem['Link']}">Link</a></strong></span></p>`;
     p.innerHTML += `<p><strong>Built With</strong>: ${elem['Build']}</p>`;
     p.innerHTML += `<p><strong>Category</strong>: ${elem['Project Type']}</p>`;
     let cardFooter = doc.createElement('div');

@@ -1,5 +1,13 @@
 export let projects = [
 {
+  'Name': `Sudoku Puzzle`,
+  'Build': `JS, HTML, CSS`,
+  'Description': `For Techtonica, we had 1 week to build a game of our choice with just HTML, CSS, and JavaScript, so I chose a game I'm passionate about: a Sudoku puzzle.`,
+  'Image': `./images/sudoku.png`,
+  'Link': `https://github.com/m3ia/sudoku_v2`,
+  'Project Type': `#PassionProjects`,
+},
+  {
   'Name': `Mock Recipe Blog Page`,
   'Build': `JS, HTML, CSS`,
   'Description': `This is a mock recipe site with a customized logo, navbar, and a recipe section. This project pushed me to better organize my code and deepen my familiarity with CSS.`,
