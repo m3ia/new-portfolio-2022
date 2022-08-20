@@ -177,13 +177,29 @@ projects.forEach( (elem, index) => {
 // Get Exp Section:
 let experienceSection = doc.getElementsByClassName('experienceSection')[0]
 
-experiences.forEach((e, i) => {
+experiences.forEach((e) => {
     let div = doc.createElement('div');
     
     // Give each exp div a title
     let h3 = doc.createElement('h3');
     h3.innerHTML = `${e["Role"]} @ <strong><a href="${e["Company Link"]}">${e["Company"]}</a></strong>`;
     div.appendChild(h3);
+    let dateRange = doc.createElement('h5');
+    dateRange.classList.add('dateRange');
+    dateRange.innerHTML = `${e["Date Range"]}`;
+    div.appendChild(dateRange);
+    let experience = doc.createElement('p');
+    experience.classList.add('experience');
+    div.appendChild(experience);
+    let expList = doc.createElement('ul');
+    div.appendChild(expList);
+    e["Experience"].map(el => {
+        let li = doc.createElement('li');
+        li.innerHTML = `
+            <span class="arrows">&#9656;</span> ${el}
+        `
+        expList.appendChild(li);
+    });
 
     experienceSection.appendChild(div);
     

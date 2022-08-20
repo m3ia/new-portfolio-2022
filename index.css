@@ -284,10 +284,20 @@ textarea {
 
 .experienceDiv h3 {
     color: black;
+    font-size: 30px;
+}
+
+.experienceDiv h5 {
+    color: rgb(85, 83, 80);
 }
 
 .experienceDiv a {
     text-decoration: none;
+}
+
+.experienceDiv li {
+    list-style: none;
+    font-size: 20px;
 }
 
 
