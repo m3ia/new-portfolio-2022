@@ -388,9 +388,14 @@ textarea {
     .contentDiv {
         width: 100%;
     }
-    .aboutMe, .contactFormDiv {
+    .aboutMe, .contactFormDiv, .experienceDiv {
         width: 100%;
         overflow: auto;
         scroll-behavior: smooth;
     }
+
+    .experienceDiv h2 {
+        font-size: 50px;
+    }
+
  }
