@@ -5,7 +5,7 @@ export let projects = [
   'Description': `For Techtonica, we had 1 week to build a game of our choice with just HTML, CSS, and JavaScript, so I chose a game I'm passionate about: a Sudoku puzzle.`,
   'Image': `./images/sudoku.png`,
   'Link': `https://github.com/m3ia/sudoku_v2`,
-  'Project Type': `#PassionProjects`,
+  'Project Type': `Passion Project`,
 },
   {
   'Name': `Mock Recipe Blog Page`,
@@ -13,7 +13,7 @@ export let projects = [
   'Description': `This is a mock recipe site with a customized logo, navbar, and a recipe section. This project pushed me to better organize my code and deepen my familiarity with CSS.`,
   'Image': `./images/mock-recipe.png`,
   'Link': `https://github.com/m3ia/mock-recipe-page/blob/main/README.md`,
-  'Project Type': `#PassionProjects`,
+  'Project Type': `Passion Project`,
 },
 {
   'Name': `Got It!`,
@@ -21,7 +21,7 @@ export let projects = [
   'Description': `Got It! is a shopping list app for anyone who loves to cook, prep, and plan on the regular. \n Got It has a recurring list feature where you can stay on top of your recurring shopping lists on a regular basis.`,
   'Image': `./images/got-it.png`,
   'Link': `https://github.com/m3ia/GotIt`,
-  'Project Type': `#PassionProject`,
+  'Project Type': `Passion Project`,
 },
 
 {
@@ -30,7 +30,7 @@ export let projects = [
   'Description': `With this game, one can practice binary search. Built to be accessible to those with visual or physical impairments and/or dyslexia.`,
   'Image': `./images/guess-that-num.png`,
   'Link': `https://github.com/m3ia/m3ia.github.io/blob/main/README.md`,
-  'Project Type': `#PassionProjects`,
+  'Project Type': `Passion Project`,
   },
 {
   'Name': `Bank Account Page`,
