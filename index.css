@@ -316,8 +316,13 @@ textarea {
     }
 
     /* NavBar (Mobile) --------------------------- */
+    .html {
+        width: 100%;
+    }
     .miniNav {
         display: block;
+        width: 100%;
+        text-overflow:ellipsis;
     }
 
     .sidebarHeading {
@@ -341,6 +346,8 @@ textarea {
         font-family: 'Arvo', serif;
         letter-spacing: 3px;
         align-items: right;
+        width: 100%;
+        padding: 10px;
     }
 
     h1 {
@@ -380,7 +387,8 @@ textarea {
         display: flex;
         flex-direction: column;
         align-items: center; 
-        align-content: center;   
+        align-content: center; 
+        width: 100%;  
     }
     .contentDiv {
         width: 100%;
@@ -392,7 +400,11 @@ textarea {
     }
 
     .experienceDiv h2 {
-        font-size: 50px;
+        font-size: 30px;
+    }
+    
+    .experienceDiv h3 {
+        font-size: 20px;
     }
 
  }
