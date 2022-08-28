@@ -4,7 +4,7 @@ export const experiences = [
     "Company Link": "https://techtonica.org/",
     "Role": "Software Engineer Apprentice",
     "Date Range": "JUL 2022 - PRESENT",
-    "Experience": ["Conceptualized, developed, and designed capstone projects for 2 web application", "Built and deployed full-stack web applications on a weekly bases using PostgreSQL, Express, React, Node, JavaScript, HTML, & CSS", "Led team meetings and peer code reviews"]
+    "Experience": ["Conceptualized, developed, and designed capstone projects for 2 web application", "Built and deployed full-stack web applications on a weekly basis using JavaScript, PostgreSQL, Express, React, and Node", "Led team meetings and peer code reviews"]
   },
   {
     "Company": "Stack Overflow",
@@ -19,6 +19,6 @@ export const experiences = [
     "Role": "Individual Contributor - User Operations",
     "Date Range": "JAN 2016 - JAN 2021",
     "Experience": ["Led the Case Escalations project, delegating and supporting a high-performance team that closed 500+ contested weekly cases while maintaining a 1-2 day turnaround time",
-    "Worked cross-functionally with PR and Engineering to support a key project that tackled ~320 media-related site abuse cases per month", "Q3 2020: Received the Above & Beyond award for championing multiple key teams during a challenging quarter"]
+    "Worked cross-functionally with PR and Engineering to support project that protected business listings from ~320 media-related site abuse cases per month", "Q3 2020: Received the Above & Beyond award for championing multiple key teams during a challenging quarter"]
   },
 ];
