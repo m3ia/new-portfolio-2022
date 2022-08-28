@@ -18,7 +18,7 @@ export const experiences = [
     "Company Link": "https://yelp.com/",
     "Role": "Individual Contributor - User Operations",
     "Date Range": "JAN 2016 - JAN 2021",
-    "Experience": ["Led the Case Escalations team, closing 500 + contested weekly cases while maintaining a 1 - 2 day turnaround time",
-    "Collaborated with Engineering to support and direct team that moderated media-fueled site abuse with an average of ~320 businesses protected per month", "Q3 2020: Received the Above & Beyond award for championing multiple key teams during a challenging quarter"]
+    "Experience": ["Led the Case Escalations project, delegating and supporting a high-performance team that closed 500+ contested weekly cases while maintaining a 1-2 day turnaround time",
+    "Worked cross-functionally with PR and Engineering to support a key project that tackled ~320 media-related site abuse cases per month", "Q3 2020: Received the Above & Beyond award for championing multiple key teams during a challenging quarter"]
   },
 ];
