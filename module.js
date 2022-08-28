@@ -1,5 +1,13 @@
 export let projects = [
 {
+  'Name': `React Memory Game`,
+  'Build': `React, HTML, CSS`,
+    'Description': `After taking 1 week to review some React basics, I built a React-based memory game to apply my understanding. This game uses a set of imported images, which a user can click and match based on memory.`,
+  'Image': `./images/memory-game.png`,
+  'Link': `https://github.com/m3ia/memory-game`,
+  'Project Type': `#PracticeMakesProgress`,
+},
+  {
   'Name': `Sudoku Puzzle`,
   'Build': `JS, HTML, CSS`,
   'Description': `For Techtonica, I spent ~4 days building a game I'm passionate about: Sudoku. My favorite part building this game was figuring out an algorithm to dynamically update the styling according to duplicates in a row, column, and a parent box grid.`,
