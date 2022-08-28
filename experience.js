@@ -4,7 +4,7 @@ export const experiences = [
     "Company Link": "https://techtonica.org/",
     "Role": "Software Engineer Apprentice",
     "Date Range": "JUL 2022 - PRESENT",
-    "Experience": ["Conceptualized, developed, and designed capstone projects for 2 web application", "Built and deployed full-stack web applications on a weekly basis using JavaScript, PostgreSQL, Express, React, and Node", "Led team meetings and peer code reviews"]
+    "Experience": ["Conceptualized, developed, and designed capstone projects for 2 web applications", "Built and deployed full-stack web applications on a weekly basis using JavaScript, PostgreSQL, Express, React, and Node", "Led team meetings and peer code reviews"]
   },
   {
     "Company": "Stack Overflow",
