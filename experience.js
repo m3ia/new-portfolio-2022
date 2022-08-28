@@ -16,8 +16,9 @@ export const experiences = [
   {
     "Company": "Yelp",
     "Company Link": "https://yelp.com/",
-    "Role": "Senior Content Moderator",
+    "Role": "Individual Contributor - User Operations",
     "Date Range": "JAN 2016 - JAN 2021",
-    "Experience": ["Directed and supported team that moderated media-fueled site abuse with an average of ~320 businesses protected per month", "Worked cross-functionally with Legal, Fraud Analytics, and User Support to lead the Case Escalations team, closing 500+ contested weekly cases while maintaining a 1-2 day turnaround time", "Q3 2020: Received the Above & Beyond award for championing 2 key teams during a challenging quarter"]
+    "Experience": ["Led the Case Escalations team, closing 500 + contested weekly cases while maintaining a 1 - 2 day turnaround time",
+    "Collaborated with Engineering to support and direct team that moderated media-fueled site abuse with an average of ~320 businesses protected per month", "Q3 2020: Received the Above & Beyond award for championing multiple key teams during a challenging quarter"]
   },
 ];
