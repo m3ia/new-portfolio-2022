@@ -201,6 +201,10 @@ textarea {
     margin: 10px;
 }
 
+.smIcons {
+    text-align: center;
+}
+
 /* Projects (Desktop) --------------------------- */
 .projects {
     display: none;
