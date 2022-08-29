@@ -116,21 +116,21 @@ experienceLinks.forEach(el => el.addEventListener("click", function () {
 // CONTACT FORM SUBMISSION
 // ---------------------------------
 
-const submitBtn = doc.getElementById('submitBtn');
+// const submitBtn = doc.getElementById('submitBtn');
 
-submitBtn.addEventListener("click", () => {
-    const submissionName = document.querySelector('input[name="name"]').value;
+// submitBtn.addEventListener("click", () => {
+//     const submissionName = document.querySelector('input[name="name"]').value;
 
-    const submissionEmail = document.querySelector('input[name="email"]').value;
+//     const submissionEmail = document.querySelector('input[name="email"]').value;
 
-    const submissionMsg = document.querySelector('textarea[name="message"]').value;
-    console.log('name: ', submissionName);
-    console.log('email: ', submissionEmail);
-    console.log('message: ', submissionMsg);
+//     const submissionMsg = document.querySelector('textarea[name="message"]').value;
+//     console.log('name: ', submissionName);
+//     console.log('email: ', submissionEmail);
+//     console.log('message: ', submissionMsg);
 
-    document.getElementsByClassName("contactForm")[0].reset();
+//     document.getElementsByClassName("contactForm")[0].reset();
 
-});
+// });
 
 // ---------------------------------
 // PROJECTS SECTION:
