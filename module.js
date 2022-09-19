@@ -1,5 +1,13 @@
 export let projects = [
 {
+  'Name': `GoodGames Trivia App`,
+  'Build': `React, Node, Express, Jest, RTL`,
+    'Description': `For this project, a user can answer random questions fetched from the Open Trivia Database in a space-themed UI.`,
+  'Image': `./images/question-ss.png`,
+  'Link': `https://github.com/m3ia/quiz-app`,
+  'Project Type': `#PracticeMakesProgress`,
+},
+  {
   'Name': `React Memory Game`,
   'Build': `React, HTML, CSS`,
     'Description': `After taking 1 week to review some React basics, I built a React-based memory game to apply my understanding. This game uses a set of imported images, which a user can click and match based on memory.`,
