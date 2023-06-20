@@ -1,9 +1,16 @@
 export const experiences = [
+    {
+    "Company": "PlayStation",
+    "Company Link": "https://www.playstation.com/en-us/",
+    "Role": "Software Development Engineer in Test",
+    "Date Range": "JAN 2023 - PRESENT",
+    "Experience": ["Fixed and updated a localization via WebDriver tool used by multiple QA teams that reduced manual testing time from 32 hours per feature to <10 minutes", "Tested expected user flow, bugs, and releases through manual verification, sanity testing, smoke testing, and regression testing to ensure high quality builds", "Automated test cases for full-stack features on the PlayStation Web Store"]
+  },
   {
     "Company": "Techtonica",
     "Company Link": "https://techtonica.org/",
     "Role": "Software Engineer Apprentice",
-    "Date Range": "JUL 2022 - PRESENT",
+    "Date Range": "JUL 2022 - JAN 2023",
     "Experience": ["Conceptualized, developed, and designed capstone projects for 2 web applications", "Built and deployed full-stack web applications on a weekly basis using JavaScript, PostgreSQL, Express, React, and Node", "Led team meetings and peer code reviews"]
   },
   {
