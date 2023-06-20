@@ -1,5 +1,29 @@
 export let projects = [
 {
+  'Name': `priorityHealth (pH)`,
+  'Build': `React, Node, Express, Postgres, auth0, Docker, Edamam's Nutrition Analysis API, Edamam's Food DataBase API, Interweave, Render`,
+    'Description': `priorityHealth (pH) is a health tracking app for folks with special dietary needs. Users can track and view nutritional info for foods categorized by their tolerance levels, log their wellness journeys, and add recipes to different collections.`,
+  'Image': `images/ph-food-tolerance.png`,
+  'Link': `https://github.com/m3ia/priority-health/blob/main/README.md`,
+  'Project Type': `Passion Project`,
+  },
+  {
+  'Name': `Sudoku Puzzle`,
+  'Build': `JS, HTML, CSS`,
+  'Description': `For Techtonica, I spent ~4 days building a game I'm passionate about: Sudoku. My favorite part building this game was figuring out an algorithm to dynamically update the styling according to duplicates in a row, column, and a parent box grid.`,
+  'Image': `./images/sudoku.png`,
+  'Link': `https://github.com/m3ia/sudoku_v2`,
+  'Project Type': `Passion Project`,
+},
+  {
+  'Name': `GWOAT: Greatest Women Of All Time`,
+  'Build': `React, Node, Express, Postgres, Interweave`,
+    'Description': `GWOAT is a blog page I built, where the design is reminiscent of customized Xanga or Tumblr pages from the 2000-2010's. For this project, I interviewed folks from my Techtonica cohort about women artists they wanted to show appreciation for on the site. I really enjoyed building a full-stack web application where users can add posts, styled with HTML, to depict their favorite woman artist.`,
+  'Image': `images/gwoat.png`,
+  'Link': `https://github.com/m3ia/blog`,
+  'Project Type': `#PracticeMakesProgress`,
+},
+  {
   'Name': `GoodGames Trivia App`,
   'Build': `React, Node, Express, Jest, RTL`,
     'Description': `For this project, a user can answer random questions fetched from the Open Trivia Database in a space-themed UI.`,
@@ -14,14 +38,6 @@ export let projects = [
   'Image': `./images/memory-game.png`,
   'Link': `https://github.com/m3ia/memory-game`,
   'Project Type': `#PracticeMakesProgress`,
-},
-  {
-  'Name': `Sudoku Puzzle`,
-  'Build': `JS, HTML, CSS`,
-  'Description': `For Techtonica, I spent ~4 days building a game I'm passionate about: Sudoku. My favorite part building this game was figuring out an algorithm to dynamically update the styling according to duplicates in a row, column, and a parent box grid.`,
-  'Image': `./images/sudoku.png`,
-  'Link': `https://github.com/m3ia/sudoku_v2`,
-  'Project Type': `Passion Project`,
 },
   {
   'Name': `Mock Recipe Blog Page`,
