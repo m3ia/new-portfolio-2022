@@ -31,13 +31,13 @@ export let projects = [
   'Link': `https://github.com/m3ia/quiz-app`,
   'Project Type': `#PracticeMakesProgress`,
 },
-  {
-  'Name': `React Memory Game`,
-  'Build': `React, HTML, CSS`,
-    'Description': `After taking 1 week to review some React basics, I built a React-based memory game to apply my understanding. This game uses a set of imported images, which a user can click and match based on memory.`,
-  'Image': `./images/memory-game.png`,
-  'Link': `https://github.com/m3ia/memory-game`,
-  'Project Type': `#PracticeMakesProgress`,
+{
+  'Name': `Got It!`,
+  'Build': `Node.js, React.js, Express.js, Postgres, Google Cal API, Google, OAuth2, Bootstrap`,
+  'Description': `Got It! is a shopping list app for anyone who loves to cook, prep, and plan on a regular basis. \n Got It has a recurring list feature where you can stay on top of your recurring shopping lists on a regular basis.`,
+  'Image': `./images/got-it.png`,
+  'Link': `https://github.com/m3ia/GotIt`,
+  'Project Type': `Passion Project`,
 },
   {
   'Name': `Mock Recipe Blog Page`,
@@ -48,15 +48,6 @@ export let projects = [
   'Project Type': `Passion Project`,
 },
 {
-  'Name': `Got It!`,
-  'Build': `Node.js, React.js, Express.js, Postgres, Google Cal API, Google, OAuth2, Bootstrap`,
-  'Description': `Got It! is a shopping list app for anyone who loves to cook, prep, and plan on a regular basis. \n Got It has a recurring list feature where you can stay on top of your recurring shopping lists on a regular basis.`,
-  'Image': `./images/got-it.png`,
-  'Link': `https://github.com/m3ia/GotIt`,
-  'Project Type': `Passion Project`,
-},
-
-{
   'Name': `Guess That Number!`,
   'Build': `HTML, CSS, and Bootstrap`,
   'Description': `With this game, one can practice binary search. Built to be accessible to those with visual or physical impairments and/or dyslexia.`,
@@ -64,6 +55,14 @@ export let projects = [
   'Link': `https://github.com/m3ia/m3ia.github.io/blob/main/README.md`,
   'Project Type': `Passion Project`,
   },
+    {
+  'Name': `React Memory Game`,
+  'Build': `React, HTML, CSS`,
+    'Description': `After taking 1 week to review some React basics, I built a React-based memory game to apply my understanding. This game uses a set of imported images, which a user can click and match based on memory.`,
+  'Image': `./images/memory-game.png`,
+  'Link': `https://github.com/m3ia/memory-game`,
+  'Project Type': `#PracticeMakesProgress`,
+},
 {
   'Name': `Bank Account Page`,
   'Build': `HTML, CSS, JavaScript`,
