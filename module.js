@@ -62,6 +62,14 @@ export let projects = [
   'Image': `./images/memory-game.png`,
   'Link': `https://github.com/m3ia/memory-game`,
   'Project Type': `#PracticeMakesProgress`,
+  },
+    {
+  'Name': `Open Weather Project`,
+  'Build': `React, Open Weather API`,
+    'Description': `For this project, I practiced fetching data from the Open Weather API. Thanks to React, the view is dynamically updated based on the user's selection--just as though they were viewing their own weather app.`,
+  'Image': `https://github.com/m3ia/openweather-proj/raw/main/weather.png`,
+  'Link': `https://github.com/m3ia/openweather-proj`,
+  'Project Type': `#PracticeMakesProgress`,
 },
 {
   'Name': `Bank Account Page`,
